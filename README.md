@@ -20,7 +20,7 @@ Static one-page Puffbums product-led website for `www.puffbums.com`.
 
 ## Current Shopify links
 
-These are preview links and should be replaced with final live Shopify product URLs before public launch if Shopify changes them.
+These are the live Shopify product URLs currently used by the website
 
 - Oceanbum Founder Bundle: `https://puffzenden.com/products/oceanbum-founder-bundle`
 - Oceanbum Replacement: `https://puffzenden.com/products/oceanbum-replacement`
@@ -40,6 +40,6 @@ For the `www` subdomain, create a CNAME record:
 
 - Host/name: `www`
 - Type: `CNAME`
-- Value/target: `ayobamiog1.github.io`
+- Value/target: `puffzenden.github.io`
 
 For the root domain `puffbums.com`, either set forwarding to `https://www.puffbums.com` from your domain provider or add GitHub Pages apex A records if you want the root domain to resolve directly.
