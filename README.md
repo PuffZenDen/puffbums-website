@@ -18,9 +18,14 @@ Static one-page Puffbums product-led website for `www.puffbums.com`.
 | `assets/images/box-coastal-oceanbum.jpg` | Replacement product card / packaging hero |
 | `assets/images/still-calm-oceanbum.jpg` | Gallery / calm still-life |
 
+## Social links
+
+- Instagram: `https://www.instagram.com/puffbums.co`
+- TikTok: `https://tiktok.com/@puffbums`
+
 ## Current Shopify links
 
-These are the live Shopify product URLs currently used by the website
+These are the live Shopify product URLs currently used by the website.
 
 - Oceanbum Founder Bundle: `https://puffzenden.com/products/oceanbum-founder-bundle`
 - Oceanbum Replacement: `https://puffzenden.com/products/oceanbum-replacement`
