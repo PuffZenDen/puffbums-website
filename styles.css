@@ -111,6 +111,44 @@ button { font: inherit; }
 }
 .nav-menu a { transition: color 180ms ease; }
 .nav-menu a:hover { color: var(--ocean); }
+.social-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(19, 34, 56, 0.12);
+  background: rgba(255,255,255,0.62);
+  color: rgba(19, 34, 56, 0.78);
+  transition: transform 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+.social-icon:hover {
+  color: var(--ocean);
+  border-color: rgba(2,119,189,0.34);
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 12px 28px rgba(2,119,189,0.16);
+}
+.social-icon svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.nav-social,
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-menu .social-icon {
+  flex: 0 0 auto;
+  padding: 0;
+}
+
 .nav-cta {
   color: white !important;
   background: linear-gradient(135deg, var(--deep), var(--ocean));
@@ -558,7 +596,7 @@ details p { margin: 0.8rem 0 0; color: var(--muted); }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.35fr 0.9fr 1fr 0.9fr;
   gap: 2rem;
   padding-bottom: 2rem;
 }
@@ -575,6 +613,31 @@ details p { margin: 0.8rem 0 0; color: var(--muted); }
   color: rgba(255,255,255,0.72);
 }
 .footer-grid a:hover { color: white; }
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.2rem;
+}
+.footer-socials .social-icon {
+  display: inline-grid !important;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 0 !important;
+  padding: 0;
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.82);
+}
+.footer-socials .social-icon:hover {
+  color: white;
+  border-color: rgba(255,255,255,0.36);
+  background: rgba(255,255,255,0.13);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.18);
+}
+.footer-socials .social-icon svg { width: 19px; height: 19px; }
+
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -627,6 +690,14 @@ details p { margin: 0.8rem 0 0; color: var(--muted); }
   .nav-menu.is-open { display: flex; }
   .nav-menu a { padding: 0.9rem 1rem; border-radius: 16px; }
   .nav-cta { text-align: center; margin-top: 0.4rem; }
+  .nav-social {
+    justify-content: center;
+    padding: 0.55rem 0 0.75rem;
+  }
+  .nav-menu .social-icon {
+    width: 46px;
+    height: 46px;
+  }
   .hero-grid,
   .split-grid,
   .science-panel,
