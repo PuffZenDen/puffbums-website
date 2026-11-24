@@ -453,7 +453,7 @@ h3 {
 
 .product-grid {
   display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.4rem;
   align-items: stretch;
 }
@@ -468,7 +468,7 @@ h3 {
 .product-card.featured { box-shadow: var(--shadow); }
 .product-card img {
   width: 100%;
-  height: 380px;
+  height: 300px;
   object-fit: cover;
   border-radius: 0;
   box-shadow: none;
