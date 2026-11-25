@@ -34,6 +34,7 @@ body {
 
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
+.faq-list details a { color: var(--deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 button { font: inherit; }
 
 .skip-link {
